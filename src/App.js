@@ -16,7 +16,7 @@ export default function PiCoinConverter() {
   const convertPiCoin = async () => {
     try {
       const response = await axios.get(
-        `http://pi-coin-backend.onrender.com/convert?amount=${amount}&currency=${currency}`
+        `https://pi-coin-backend.onrender.com/convert?amount=${amount}&currency=${currency}`
       );
       setConvertedValue(response.data.convertedValue);
       setError(null);
